@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <title>Transform and Transition</title>
+
+    <style>
+        
+     body {
+        background-color: #92C8F8;
+         color: azure;
+    } 
+        
+    div {
+	margin-left: 300px;
+	margin-bottom: 200px;
+}
+        
+#one {
+    background: #F4A0B0;
+	width: 100px;
+	height: 100px;
+	border-radius: 0;
+	transition: transform 2s, border-radius 0.3s, background 2s;
+}
+
+#one:hover {
+	background: #CEE13A;
+	transform: rotate(45deg);
+	border-radius: 30%;
+	transition: transform 0.5s;
+    transform: rotate(180deg);
+}
+
+#two {
+    background: #CEE13A;
+    width: 100px ;
+    height: 100px;
+    transition: transform 1s;
+    background:inherit 2s;
+    
+}
+
+#two:hover {
+	background: #F4A0B0;
+	transform: scale(10);
+	transition: transform 0.5s;
+}
+
+#three {
+    background: #26239C;
+    width: 100px ;
+    height: 100px;
+    transition: transform .03s;
+    background: inherit 2s;
+}
+
+#three:hover {
+	background: #185FE6;
+	transform: rotateX(360deg);
+    transform: rotateY(90deg);
+	transition: transform 1s;
+}
+
+#four {
+    background: #185FE6;
+    width: 100px ;
+    height: 100px;
+    transition: transform .03s;
+    background: inherit 2s;
+}
+
+#four:hover {
+	background: #26239C;
+	transform: translate(100px, 200px);
+	transition: transform 1s;
+}
+    </style>
+</head>
+
+<body>
+    <div id="one"><p>FLOP</p></div>
+
+    <div id="two"><p>uwu</p></div>
+
+    <div id="three"><p>Boy bye!</p></div>
+
+    <div id="four"><p>AHHH stay away!</p></div>
+</body>
+
+</html>
