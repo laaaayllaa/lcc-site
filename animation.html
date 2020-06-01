@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <title>Animation</title>
+
+    <style>
+        
+    h1 {
+    color: lightgrey;
+	margin: 100px;
+	width: 100px;
+	height: 100px;
+	background-color: aquamarine;
+	animation-name: example;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-timing-function: ease;
+        display: flex; }   
+	
+
+@keyframes example {
+	0% {
+		background-color: aquamarine;
+		transform: scale(1);
+		border-radius: 0;}
+    
+    25% {
+		background-color: blue;
+		transform: scale(2);
+		border-radius: 25%;}
+    
+    50% {
+		background-color: hotpink;
+		transform: scale(3);
+		border-radius: 50%;}
+    
+	100% {
+		background-color: rebeccapurple;
+		transform: scale(4);
+		border-radius: 100%;}
+}
+
+    </style>
+</head>
+
+<body>
+    <div></div>
+
+<div></div>
+
+<h1>Flashy</h1>
+</body>
+</html>
